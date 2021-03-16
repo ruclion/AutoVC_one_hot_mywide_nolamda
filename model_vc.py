@@ -63,7 +63,7 @@ class Encoder(nn.Module):
     def forward(self, x, c_org):
         # print('important, input x:', x.size())
         assert x.size(1) != 1
-        assert x.size(1) == 192
+        # assert x.size(1) == 192
         x = x.squeeze(1).transpose(2,1)
         # TODO!! replace
         # x = x.transpose(2,1)
